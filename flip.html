@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        .box{
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            align-items: center;
+            display: flex;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .box:hover .box-content{
+            transform: rotateY(180deg);
+        }
+        .box:hover .box-front{
+            transform: scale(1.3);
+            z-index: 2;
+        }
+        .box-content{
+            width: 300px;
+            height: 300px;
+            /* position: absolute; */
+            transform-style: preserve-3d;
+            transition: all 0.5s ease;
+        }
+        .box-front , .box-back{
+            /* position: relative; */
+             width: 300px;
+             height: 300px;
+            padding: 30px;
+           
+        }
+        .box-front p{
+            font-size: 40px;
+            text-align: center;
+        }
+        .box-back p{
+            font-size: 20px;
+            text-align: center;
+        }
+        .box-front i{
+            align-items: center;
+            font-size: 50px;
+        }
+        .box-front{
+            background: #f11c1c;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+        }
+        .box-back{
+            background: #efde70;
+            width: 100%;
+            height: 100%;
+            /* position: relative; */
+            backface-visibility: hidden;
+            transform: rotateY(180deg); 
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+    <div class="box-content">
+    <div class="box-front">
+        <p>Shyam Sunder</p>
+       <p> <i class="fa-solid fa-heart-pulse"></i></p>
+        <p>Amrita</p>
+        <!-- <h3>About me</h3> -->
+    </div>
+    <div class="box-back">
+       <p>I LOVE U <i class="fa-solid fa-heart-pulse"></i> AMU </p>
+       <P>It has been a long months since we meet with each other and had almost known each other for a while ...i don't have any thing special to say to u... but there i one think i will always say</P>
+       <p>Thank u fro being th part of my emotions, feeling, happiness AND ALL <i class="fa-solid fa-face-kiss"> <i class="fa-solid fa-heart"></i> <i class="fa-solid fa-heart"></i></i> </p>
+    </div>
+    </div>
+    </div>
+    <div class="box">
+    <div class="box-content">
+    <div class="box-front">
+        <p>Shyam Sunder</p>
+       <p> <i class="fa-solid fa-heart-pulse"></i></p>
+        <p>Amrita</p>
+        <!-- <h3>About me</h3> -->
+    </div>
+    <div class="box-back">
+       <p>I LOVE U <i class="fa-solid fa-heart-pulse"></i> AMU </p>
+       <P>It has been a long months since we meet with each other and had almost known each other for a while ...i don't have any thing special to say to u... but there i one think i will always say</P>
+       <p>Thank u fro being th part of my emotions, feeling, happiness AND ALL <i class="fa-solid fa-face-kiss"> <i class="fa-solid fa-heart"></i> <i class="fa-solid fa-heart"></i></i> </p>
+    </div>
+    </div>
+    </div>
+</body>
+</html>
